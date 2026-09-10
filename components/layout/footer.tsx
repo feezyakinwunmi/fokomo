@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 import {
   ArrowUpRight,
@@ -40,14 +41,14 @@ export default function Footer() {
           <div>
             <Link href="/" className="inline-flex items-center gap-3">
               <div className="flex h-10 w-20 items-center justify-center rounded-xl bg-transparent text-black">
-                            <Image
-                               src="/logo.png"
-                               alt="Fokomo Logo"
-                               width={38}
-                               height={38}
-                               className="h-10 w-20"
-                             />
-                           </div>
+                <Image
+                  src="/logo.png"
+                  alt="Fokomo Logo"
+                  width={38}
+                  height={38}
+                  className="h-10 w-20"
+                />
+              </div>
             </Link>
 
             <p className="mt-7 max-w-sm text-sm leading-7 text-zinc-400">
@@ -61,9 +62,7 @@ export default function Footer() {
                 href="#"
                 aria-label="Instagram"
                 className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 transition hover:bg-white hover:text-black"
-              >
-                {/* <Instagram size={17} /> */}
-              </a>
+              />
 
               <a
                 href="#"
@@ -130,20 +129,39 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="mt-10 flex flex-col gap-4 border-t border-white/10 pt-7 text-xs text-zinc-500 sm:flex-row sm:items-center sm:justify-between">
-          <p>
-            © {new Date().getFullYear()} Fokomo. All rights reserved.
-          </p>
+        <div className="mt-10 border-t border-white/10 pt-7">
 
-          <div className="flex gap-6">
-            <Link href="/privacy" className="hover:text-white">
-              Privacy
-            </Link>
+          <div className="flex flex-col gap-4 text-xs text-zinc-500 sm:flex-row sm:items-center sm:justify-between">
+            <p>
+              © {new Date().getFullYear()} Fokomo. All rights reserved.
+            </p>
 
-            <Link href="/terms" className="hover:text-white">
-              Terms
-            </Link>
+            <div className="flex gap-6">
+              <Link href="/privacy" className="transition hover:text-white">
+                Privacy
+              </Link>
+
+              <Link href="/terms" className="transition hover:text-white">
+                Terms
+              </Link>
+            </div>
           </div>
+
+          {/* Sponsor */}
+          <div className="mt-7 flex justify-center">
+            <p className="text-xs text-zinc-600">
+              Sponsored by{" "}
+              <a
+                href="https://phantomiretechnologies.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-zinc-400 transition hover:text-white"
+              >
+                Phantomire Technologies
+              </a>
+            </p>
+          </div>
+
         </div>
       </div>
     </footer>
