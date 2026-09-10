@@ -51,26 +51,13 @@ const principles = [
 
 const teamMembers = [
   {
-    name: "Chidi Okonkwo",
+    name: "Adeyemi Haleemah precious",
     role: "Founder & CEO",
     bio: "Passionate about building customer-centric businesses that solve real problems in communities.",
-    email: "chidi@Fokomo.com",
-    phone: "+234 800 123 4567",
+    email: "Info.Adeyemihaleemah@gmail.com",
+    phone: "+234 805 865 2991",
   },
-  {
-    name: "Funke Adeyemi",
-    role: "Head of Operations",
-    bio: "Experienced in managing service operations and ensuring quality standards across all locations.",
-    email: "funke@Fokomo.com",
-    phone: "+234 800 123 4568",
-  },
-  {
-    name: "Tunde Balogun",
-    role: "Lead Technician",
-    bio: "Expert in vehicle care with over 10 years of experience in detailing and maintenance.",
-    email: "tunde@Fokomo.com",
-    phone: "+234 800 123 4569",
-  },
+ 
 ]
 
 const values = [
