@@ -119,18 +119,18 @@ export default async function ServiceDetailPage({
             </div>
 
             <div className="divide-y divide-gray-100 border-y border-gray-100">
-              {service.features.map((feature) => (
-                <div
-                  key={feature}
-                  className="flex items-center gap-3 py-4"
-                >
-                  <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-yellow-100">
-                    <Check size={14} className="text-yellow-600" />
-                  </div>
+             {service.features.map((feature: string) => (
+  <div
+    key={feature}
+    className="flex items-center gap-3 py-4"
+  >
+    <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-yellow-100">
+      <Check size={14} className="text-yellow-600" />
+    </div>
 
-                  <span className="text-sm text-gray-700">{feature}</span>
-                </div>
-              ))}
+    <span className="text-sm text-gray-700">{feature}</span>
+  </div>
+))}
             </div>
           </div>
         </div>
