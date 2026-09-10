@@ -16,9 +16,9 @@ import {
 } from "lucide-react"
 
 export const metadata = {
-  title: "Contact Us | CarPadi",
+  title: "Contact Us | Fokomo",
   description:
-    "Get in touch with CarPadi for bookings, car-care services, mobile service requests, estate enquiries and support.",
+    "Get in touch with Fokomo for bookings, car-care services, mobile service requests, estate enquiries and support.",
 }
 
 const contactOptions = [
@@ -36,7 +36,7 @@ const contactOptions = [
     title: "Call us",
     description:
       "Speak directly with our team when you need quick assistance.",
-    action: "Call CarPadi",
+    action: "Call Fokomo",
     href: "#",
     className: "bg-blue-50 text-blue-600",
   },
@@ -46,7 +46,7 @@ const contactOptions = [
     description:
       "Send us a detailed enquiry and our team will get back to you.",
     action: "Send an email",
-    href: "mailto:hello@carpadi.com",
+    href: "mailto:hello@Fokomo.com",
     className: "bg-purple-50 text-purple-600",
   },
 ]
@@ -68,7 +68,7 @@ const reasons = [
     icon: MapPin,
     title: "Estate enquiries",
     description:
-      "Want CarPadi to serve your estate or community? We would love to hear from you.",
+      "Want Fokomo to serve your estate or community? We would love to hear from you.",
   },
   {
     icon: Wrench,
@@ -102,7 +102,7 @@ export default function ContactPage() {
 
             <p className="mt-6 max-w-2xl text-base leading-7 text-gray-400 sm:text-lg sm:leading-8">
               Whether you want to book a service, ask a question, request
-              mobile car care or bring CarPadi to your estate, our team is
+              mobile car care or bring Fokomo to your estate, our team is
               ready to help.
             </p>
 
@@ -198,7 +198,7 @@ export default function ContactPage() {
 
             <p className="mt-5 text-sm leading-7 text-gray-500 sm:text-base">
               Have a question before booking? Need help with a service?
-              Looking to bring CarPadi into your estate? Send us a message and
+              Looking to bring Fokomo into your estate? Send us a message and
               tell us what you have in mind.
             </p>
 
@@ -375,7 +375,7 @@ export default function ContactPage() {
               </h2>
 
               <p className="mt-4 max-w-md text-sm leading-6 text-gray-400">
-                CarPadi is currently focused on serving customers and
+                Fokomo is currently focused on serving customers and
                 communities around Epe as we build and improve the service.
               </p>
 
@@ -431,7 +431,7 @@ export default function ContactPage() {
           </div>
 
           <h2 className="mt-7 text-3xl font-semibold tracking-tight text-black sm:text-4xl">
-            Want CarPadi in your estate?
+            Want Fokomo in your estate?
           </h2>
 
           <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-gray-500 sm:text-base">

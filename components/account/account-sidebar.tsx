@@ -12,7 +12,11 @@ import {
   User,
   Home,
   ChevronRight,
+
 } from "lucide-react"
+import Image from "next/image"
+
+
 
 const navigation = [
   {
@@ -55,17 +59,15 @@ export default function AccountSidebar() {
       {/* Logo */}
       <div className="border-b border-gray-100 p-5">
         <Link href="/" className="flex items-center gap-3">
-          <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-yellow-400 text-sm font-bold text-black">
-            F
-          </div>
-          <div>
-            <span className="block text-[15px] font-semibold tracking-tight text-gray-900">
-              Fokomo
-            </span>
-            <span className="block text-[8px] font-medium uppercase tracking-[0.25em] text-gray-400">
-              Account
-            </span>
-          </div>
+          <div className="flex h-10 w-20 items-center justify-center rounded-xl bg-transparent text-black">
+                        <Image
+                           src="/logo.png"
+                           alt="Fokomo Logo"
+                           width={38}
+                           height={38}
+                           className="h-10 w-20"
+                         />
+                       </div>
         </Link>
       </div>
 

@@ -186,7 +186,7 @@ export default function LoginPage() {
             </h2>
             
             <p className="mt-3 text-black/80">
-              Sign in to manage your bookings, view service history, and get the most out of your CarPadi experience.
+              Sign in to manage your bookings, view service history, and get the most out of your Fokomo experience.
             </p>
 
             <div className="mt-8 flex justify-center gap-6">

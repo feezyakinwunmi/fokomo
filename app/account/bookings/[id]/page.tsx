@@ -140,7 +140,7 @@ function BookingTimeline({ booking }: { booking: Booking }) {
       description: isCancelled
         ? "This booking was cancelled before service."
         : isCompleted
-          ? "The booking was confirmed by the CarPadi team."
+          ? "The booking was confirmed by the Fokomo team."
           : "Your booking is scheduled for the selected date and time.",
       complete: !isCancelled,
     },

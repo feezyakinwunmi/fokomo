@@ -167,7 +167,7 @@ export default function SignupPage() {
                 className="mt-1 h-4 w-4 rounded border-gray-300 text-yellow-400 focus:ring-yellow-400"
               />
               <label className="text-xs leading-5 text-gray-500">
-                I agree to CarPadi's{" "}
+                I agree to Fokomo's
                 <Link href="/terms" className="text-yellow-600 hover:text-yellow-700">
                   Terms of Service
                 </Link>{" "}

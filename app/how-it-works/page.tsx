@@ -10,9 +10,9 @@ import {
 } from "lucide-react"
 
 export const metadata = {
-  title: "How It Works | CarPadi",
+  title: "How It Works | Fokomo",
   description:
-    "See how CarPadi makes car care simple, convenient and less time-consuming.",
+    "See how Fokomo makes car care simple, convenient and less time-consuming.",
 }
 
 const steps = [
@@ -67,7 +67,7 @@ export default function HowItWorksPage() {
             <div className="inline-flex items-center gap-2 rounded-full bg-yellow-500/10 px-3 py-1.5">
               <span className="h-1.5 w-1.5 rounded-full bg-yellow-500" />
               <span className="text-xs font-medium text-yellow-400">
-                How CarPadi Works
+                How Fokomo Works
               </span>
             </div>
 
@@ -163,7 +163,7 @@ export default function HowItWorksPage() {
 
               <p className="mt-3 text-sm text-gray-600">
                 Instead of making the waiting experience the centre of
-                car care, CarPadi is building a service where convenience,
+                car care, Fokomo is building a service where convenience,
                 communication and proper handling are part of the product.
               </p>
 

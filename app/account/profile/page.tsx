@@ -287,7 +287,7 @@ export default function AccountProfilePage() {
               </div>
 
               <p className="mt-2 text-sm leading-5 text-gray-500">
-                Control how CarPadi keeps you informed about your services.
+                Control how Fokomo keeps you informed about your services.
               </p>
 
               <button

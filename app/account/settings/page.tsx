@@ -155,7 +155,7 @@ export default function SettingsPage() {
             <SettingsLink
               icon={Smartphone}
               title="Contact preferences"
-              description="Choose how CarPadi should contact you."
+              description="Choose how Fokomo should contact you."
               href="/account/profile"
             />
 
@@ -227,7 +227,7 @@ export default function SettingsPage() {
                   Sign out
                 </p>
                 <p className="mt-1 text-xs text-gray-500">
-                  Sign out of your CarPadi account on this device.
+                  Sign out of your Fokomo account on this device.
                 </p>
               </div>
 

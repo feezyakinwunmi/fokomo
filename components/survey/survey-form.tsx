@@ -282,11 +282,8 @@ export default function SurveyForm() {
   function submitSurvey() {
     setLoading(true)
 
-    // Temporary MVP behaviour.
-    // Later this becomes a Supabase insert.
     setTimeout(() => {
       console.log("Fokomo survey:", answers)
-
       setLoading(false)
       setSubmitted(true)
     }, 800)
@@ -294,30 +291,30 @@ export default function SurveyForm() {
 
   if (submitted) {
     return (
-      <div className="rounded-[2rem] border border-zinc-200 bg-white p-8 text-center md:p-14">
-        <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-zinc-950 text-white">
-          <CheckCircle2 size={28} />
+      <div className="rounded-2xl border border-gray-200 bg-white p-8 text-center md:p-12">
+        <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-green-100">
+          <CheckCircle2 size={28} className="text-green-600" />
         </div>
 
-        <p className="mt-7 text-xs font-semibold uppercase tracking-[0.18em] text-zinc-500">
+        <p className="mt-5 text-xs font-medium uppercase tracking-wider text-gray-400">
           Survey complete
         </p>
 
-        <h2 className="mt-3 text-4xl font-semibold tracking-tight">
-          Thank you for helping us build Fokomo.
+        <h2 className="mt-2 text-2xl font-bold tracking-tight text-gray-900">
+          Thank you for helping us build Fokomo
         </h2>
 
-        <p className="mx-auto mt-5 max-w-xl leading-7 text-zinc-500">
+        <p className="mx-auto mt-3 max-w-xl text-sm leading-6 text-gray-500">
           Your answers will help us understand what car owners actually
           need and design a better car-care experience around them.
         </p>
 
         <a
           href="/"
-          className="mt-8 inline-flex items-center gap-2 rounded-full bg-zinc-950 px-6 py-3.5 text-sm font-semibold text-white"
+          className="mt-6 inline-flex items-center gap-2 rounded-lg bg-yellow-400 px-6 py-2.5 text-sm font-medium text-black transition hover:bg-yellow-300"
         >
           Back to Fokomo
-          <ArrowRight size={16} />
+          <ArrowRight size={15} />
         </a>
       </div>
     )
@@ -330,20 +327,20 @@ export default function SurveyForm() {
         total={questions.length}
       />
 
-      <div className="mt-10 rounded-[2rem] border border-zinc-200 bg-white p-7 md:p-12">
+      <div className="mt-6 rounded-2xl border border-gray-200 bg-white p-6 md:p-8">
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-zinc-500">
+          <p className="text-xs font-medium uppercase tracking-wider text-gray-400">
             {question.section}
           </p>
 
-          <h2 className="mt-4 max-w-3xl text-3xl font-semibold tracking-tight md:text-4xl">
+          <h2 className="mt-2 max-w-3xl text-xl font-bold tracking-tight text-gray-900 md:text-2xl">
             {question.question}
           </h2>
         </div>
 
-        <div className="mt-10">
+        <div className="mt-6">
           {question.type === "single" && (
-            <div className="grid gap-3">
+            <div className="grid gap-2">
               {question.options?.map((option) => {
                 const selected = answer === option
 
@@ -352,23 +349,23 @@ export default function SurveyForm() {
                     type="button"
                     key={option}
                     onClick={() => setSingleAnswer(option)}
-                    className={`flex w-full items-center justify-between rounded-2xl border p-4 text-left text-sm transition ${
+                    className={`flex w-full items-center justify-between rounded-xl border p-3.5 text-left text-sm transition ${
                       selected
-                        ? "border-zinc-950 bg-zinc-950 text-white"
-                        : "border-zinc-200 hover:border-zinc-400"
+                        ? "border-yellow-400 bg-yellow-50 text-gray-900"
+                        : "border-gray-200 hover:border-yellow-200 hover:bg-gray-50"
                     }`}
                   >
-                    <span>{option}</span>
+                    <span className={selected ? "font-medium" : ""}>{option}</span>
 
                     <span
-                      className={`h-5 w-5 rounded-full border ${
+                      className={`flex h-5 w-5 items-center justify-center rounded-full border ${
                         selected
-                          ? "border-white bg-white"
-                          : "border-zinc-300"
+                          ? "border-yellow-400 bg-yellow-400"
+                          : "border-gray-300"
                       }`}
                     >
                       {selected && (
-                        <span className="mx-auto mt-1 block h-2.5 w-2.5 rounded-full bg-zinc-950" />
+                        <span className="h-2 w-2 rounded-full bg-black" />
                       )}
                     </span>
                   </button>
@@ -379,11 +376,11 @@ export default function SurveyForm() {
 
           {question.type === "multi" && (
             <div>
-              <p className="mb-4 text-sm text-zinc-500">
-                Select all that apply.
+              <p className="mb-3 text-xs text-gray-400">
+                Select all that apply
               </p>
 
-              <div className="grid gap-3">
+              <div className="grid gap-2">
                 {question.options?.map((option) => {
                   const selected =
                     Array.isArray(answer) &&
@@ -394,25 +391,23 @@ export default function SurveyForm() {
                       type="button"
                       key={option}
                       onClick={() => toggleMultiAnswer(option)}
-                      className={`flex w-full items-center justify-between rounded-2xl border p-4 text-left text-sm transition ${
+                      className={`flex w-full items-center justify-between rounded-xl border p-3.5 text-left text-sm transition ${
                         selected
-                          ? "border-zinc-950 bg-zinc-950 text-white"
-                          : "border-zinc-200 hover:border-zinc-400"
+                          ? "border-yellow-400 bg-yellow-50 text-gray-900"
+                          : "border-gray-200 hover:border-yellow-200 hover:bg-gray-50"
                       }`}
                     >
-                      <span>{option}</span>
+                      <span className={selected ? "font-medium" : ""}>{option}</span>
 
                       <span
                         className={`flex h-5 w-5 items-center justify-center rounded-md border ${
                           selected
-                            ? "border-white bg-white text-zinc-950"
-                            : "border-zinc-300"
+                            ? "border-yellow-400 bg-yellow-400 text-black"
+                            : "border-gray-300"
                         }`}
                       >
                         {selected && (
-                          <span className="text-xs font-bold">
-                            ✓
-                          </span>
+                          <span className="text-xs font-bold">✓</span>
                         )}
                       </span>
                     </button>
@@ -427,20 +422,20 @@ export default function SurveyForm() {
               value={typeof answer === "string" ? answer : ""}
               onChange={(e) => setTextAnswer(e.target.value)}
               placeholder={question.placeholder}
-              rows={7}
-              className="w-full resize-none rounded-2xl border border-zinc-200 p-5 text-sm leading-6 outline-none placeholder:text-zinc-400 focus:border-zinc-950"
+              rows={6}
+              className="w-full resize-none rounded-xl border border-gray-200 p-4 text-sm leading-6 outline-none placeholder:text-gray-400 focus:border-yellow-400 focus:ring-2 focus:ring-yellow-400/20"
             />
           )}
         </div>
 
-        <div className="mt-10 flex items-center justify-between gap-4 border-t border-zinc-200 pt-7">
+        <div className="mt-6 flex items-center justify-between gap-4 border-t border-gray-100 pt-6">
           <button
             type="button"
             onClick={previous}
             disabled={current === 0}
-            className="inline-flex items-center gap-2 rounded-full border border-zinc-200 px-5 py-3 text-sm font-semibold disabled:invisible"
+            className="inline-flex items-center gap-2 rounded-lg border border-gray-200 px-4 py-2.5 text-sm font-medium text-gray-600 transition hover:bg-gray-50 disabled:invisible"
           >
-            <ArrowLeft size={16} />
+            <ArrowLeft size={15} />
             Back
           </button>
 
@@ -448,25 +443,22 @@ export default function SurveyForm() {
             type="button"
             onClick={next}
             disabled={!canContinue() || loading}
-            className="inline-flex items-center gap-2 rounded-full bg-zinc-950 px-6 py-3 text-sm font-semibold text-white disabled:cursor-not-allowed disabled:opacity-40"
+            className="inline-flex items-center gap-2 rounded-lg bg-yellow-400 px-5 py-2.5 text-sm font-medium text-black transition hover:bg-yellow-300 disabled:cursor-not-allowed disabled:opacity-40"
           >
             {loading ? (
               <>
-                <Loader2
-                  size={16}
-                  className="animate-spin"
-                />
+                <Loader2 size={15} className="animate-spin" />
                 Submitting...
               </>
             ) : current === questions.length - 1 ? (
               <>
                 Submit survey
-                <ArrowRight size={16} />
+                <ArrowRight size={15} />
               </>
             ) : (
               <>
                 Continue
-                <ArrowRight size={16} />
+                <ArrowRight size={15} />
               </>
             )}
           </button>

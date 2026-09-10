@@ -13,9 +13,9 @@ import {
 } from "lucide-react"
 
 export const metadata = {
-  title: "About CarPadi",
+  title: "About Fokomo",
   description:
-    "Learn about CarPadi and our approach to making car care more convenient, trusted and customer-focused.",
+    "Learn about Fokomo and our approach to making car care more convenient, trusted and customer-focused.",
 }
 
 const principles = [
@@ -44,7 +44,7 @@ const principles = [
     icon: CarFront,
     title: "Care, not just cleaning",
     description:
-      "CarPadi is more than getting a car looking clean. It is about helping customers properly care for their vehicles.",
+      "Fokomo is more than getting a car looking clean. It is about helping customers properly care for their vehicles.",
     color: "amber",
   },
 ]
@@ -54,21 +54,21 @@ const teamMembers = [
     name: "Chidi Okonkwo",
     role: "Founder & CEO",
     bio: "Passionate about building customer-centric businesses that solve real problems in communities.",
-    email: "chidi@carpadi.com",
+    email: "chidi@Fokomo.com",
     phone: "+234 800 123 4567",
   },
   {
     name: "Funke Adeyemi",
     role: "Head of Operations",
     bio: "Experienced in managing service operations and ensuring quality standards across all locations.",
-    email: "funke@carpadi.com",
+    email: "funke@Fokomo.com",
     phone: "+234 800 123 4568",
   },
   {
     name: "Tunde Balogun",
     role: "Lead Technician",
     bio: "Expert in vehicle care with over 10 years of experience in detailing and maintenance.",
-    email: "tunde@carpadi.com",
+    email: "tunde@Fokomo.com",
     phone: "+234 800 123 4569",
   },
 ]
@@ -108,7 +108,7 @@ export default function AboutPage() {
             <div className="inline-flex items-center gap-2 rounded-full bg-yellow-500/10 px-3 py-1.5">
               <span className="h-1.5 w-1.5 rounded-full bg-yellow-500" />
               <span className="text-xs font-medium text-yellow-400">
-                About CarPadi
+                About Fokomo
               </span>
             </div>
 
@@ -120,7 +120,7 @@ export default function AboutPage() {
             </h1>
 
             <p className="mt-3 max-w-2xl text-sm leading-6 text-gray-400">
-              CarPadi is building a better way for people to care for their
+              Fokomo is building a better way for people to care for their
               cars — starting with the communities around us.
             </p>
           </div>
@@ -158,7 +158,7 @@ export default function AboutPage() {
               </p>
 
               <p>
-                CarPadi was created around that idea: take proper care of the
+                Fokomo was created around that idea: take proper care of the
                 car while respecting the person who owns it.
               </p>
 
@@ -186,7 +186,7 @@ export default function AboutPage() {
             </div>
 
             <h2 className="mt-4 text-2xl font-bold tracking-tight sm:text-3xl">
-              The CarPadi standard.
+              The Fokomo standard.
             </h2>
           </div>
 
@@ -231,7 +231,7 @@ export default function AboutPage() {
               </div>
 
               <h2 className="mt-4 text-2xl font-bold tracking-tight sm:text-3xl">
-                The people behind CarPadi
+                The people behind Fokomo
               </h2>
               <p className="mt-2 text-sm text-gray-600">
                 Meet the team dedicated to providing you with the best car care experience.

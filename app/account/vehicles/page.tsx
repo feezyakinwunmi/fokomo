@@ -318,7 +318,7 @@ export default function AccountVehiclesPage() {
             </h2>
 
             <p className="mx-auto mt-1 max-w-sm text-sm leading-6 text-gray-500">
-              Add your vehicle once and make future CarPadi bookings quicker.
+              Add your vehicle once and make future Fokomo bookings quicker.
             </p>
 
             <button
@@ -346,7 +346,7 @@ export default function AccountVehiclesPage() {
 
               <p className="mt-1 max-w-2xl text-sm leading-6 text-gray-500">
                 Your saved vehicle information makes future bookings quicker
-                and helps the CarPadi team understand what vehicle they are
+                and helps the Fokomo team understand what vehicle they are
                 caring for.
               </p>
             </div>

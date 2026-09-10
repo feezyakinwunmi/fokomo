@@ -8,37 +8,39 @@ export const metadata = {
 
 export default function SurveyPage() {
   return (
-    <main className="bg-zinc-50">
-      <section className="bg-zinc-950 text-white">
-        <div className="mx-auto max-w-7xl px-5 py-20 md:px-8 md:py-28">
+    <main className="bg-gray-50">
+      {/* Hero Section */}
+      <section className="bg-black pt-32">
+        <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-20">
           <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-zinc-500">
-              Fokomo research
-            </p>
+            <div className="inline-flex items-center gap-2 rounded-full bg-yellow-500/10 px-3 py-1.5">
+              <span className="h-1.5 w-1.5 rounded-full bg-yellow-500" />
+              <span className="text-xs font-medium text-yellow-400">
+                Fokomo Research
+              </span>
+            </div>
 
-            <h1 className="mt-4 text-5xl font-semibold tracking-[-0.05em] md:text-7xl">
+            <h1 className="mt-4 text-3xl font-bold tracking-tight text-white sm:text-4xl">
               Help us build
-              <span className="block text-zinc-500">
+              <span className="block text-yellow-500">
                 better car care.
               </span>
             </h1>
 
-            <p className="mt-7 max-w-2xl text-lg leading-8 text-zinc-400">
+            <p className="mt-3 max-w-2xl text-sm leading-6 text-gray-400 sm:text-base">
               We want to understand how people actually experience car
               care today. This short survey will help us build Fokomo
               around real customer needs.
             </p>
 
-            <div className="mt-8 flex flex-wrap gap-3 text-sm text-zinc-400">
-              <span className="rounded-full border border-white/10 px-4 py-2">
+            <div className="mt-6 flex flex-wrap gap-2">
+              <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-gray-300">
                 16 questions
               </span>
-
-              <span className="rounded-full border border-white/10 px-4 py-2">
+              <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-gray-300">
                 About 5 minutes
               </span>
-
-              <span className="rounded-full border border-white/10 px-4 py-2">
+              <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-gray-300">
                 Your feedback matters
               </span>
             </div>
@@ -46,7 +48,8 @@ export default function SurveyPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-3xl px-5 py-12 md:px-8 md:py-20">
+      {/* Survey Form */}
+      <section className="mx-auto max-w-3xl px-6 py-10 lg:px-8 lg:py-16">
         <SurveyForm />
       </section>
     </main>

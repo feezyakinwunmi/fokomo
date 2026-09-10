@@ -5,6 +5,7 @@ import { Menu, ArrowRight, Phone, User, LogOut, Settings, Calendar, Car } from "
 import { useState } from "react";
 import MobileNav from "./mobile-nav";
   import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 const navigation = [
   { name: "Services", href: "/services" },
@@ -42,18 +43,24 @@ export default function Header() {
               className="flex items-center gap-3"
               onClick={() => setMobileOpen(false)}
             >
-              <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-yellow-400 text-black">
-                <span className="text-sm font-bold">C</span>
+              <div className="flex h-10 w-20 items-center justify-center rounded-xl bg-transparent text-black">
+               <Image
+                  src="/logo2.png"
+                  alt="Fokomo Logo"
+                  width={38}
+                  height={38}
+                  className="h-10 w-20"
+                />
               </div>
 
-              <div className="leading-none">
+              {/* <div className="leading-none">
                 <span className="block text-[17px] font-semibold tracking-tight">
                   Fokomo
                 </span>
                 <span className="mt-1 block text-[8px] font-medium uppercase tracking-[0.25em] text-zinc-400">
                   Car Care
                 </span>
-              </div>
+              </div> */}
             </Link>
 
             {/* Desktop Navigation */}

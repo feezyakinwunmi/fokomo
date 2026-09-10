@@ -74,7 +74,7 @@ export default function ServiceHero() {
     <section className="bg-gray-50">
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-20">
         {/* Header */}
-        <div className="max-w-3xl">
+        <div className="max-w-3xl pt-8">
           <div className="inline-flex items-center gap-2 rounded-full bg-yellow-100 px-3 py-1.5">
             <span className="h-1.5 w-1.5 rounded-full bg-yellow-500" />
             <span className="text-xs font-medium text-yellow-700">
@@ -89,12 +89,12 @@ export default function ServiceHero() {
 
           <p className="mt-3 max-w-2xl text-sm leading-6 text-gray-600">
             From everyday washing to deeper detailing and convenient mobile
-            services, CarPadi helps you take care of your car without making
+            services, Fokomo helps you take care of your car without making
             car care take over your day.
           </p>
 
           <Link
-            href="/book"
+            href="/account/book"
             className="mt-6 inline-flex items-center gap-2 rounded-lg bg-yellow-400 px-6 py-2.5 text-sm font-medium text-black transition hover:bg-yellow-300"
           >
             Book a service

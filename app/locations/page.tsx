@@ -11,12 +11,12 @@ import {
 } from "lucide-react"
 
 export const metadata = {
-  title: "Locations | CarPadi",
+  title: "Locations | Fokomo",
   description:
-    "Find CarPadi car-care services in your community.",
+    "Find Fokomo car-care services in your community.",
 }
 
-// Realistic locations based on the CarPadi business model
+// Realistic locations based on the Fokomo business model
 const locations = [
   {
     slug: "magodo",
@@ -26,7 +26,7 @@ const locations = [
     services: ["Express Wash", "Premium Detailing", "Interior Care", "Basic Maintenance", "Mobile Service"],
     status: "Active",
     phone: "+234 800 123 4567",
-    email: "magodo@carpadi.com",
+    email: "magodo@Fokomo.com",
     hours: "Mon-Sat: 7am - 6pm",
   },
   {
@@ -37,7 +37,7 @@ const locations = [
     services: ["Express Wash", "Premium Detailing", "Interior Care", "Mobile Service"],
     status: "Coming Soon",
     phone: "+234 800 123 4568",
-    email: "lekki@carpadi.com",
+    email: "lekki@Fokomo.com",
     hours: "Mon-Sat: 8am - 6pm",
   },
 ]
@@ -65,7 +65,7 @@ export default function LocationsPage() {
 
             <p className="mt-3 max-w-2xl text-sm leading-6 text-gray-400">
               We are starting with communities where customers need better
-              access to reliable car care. As CarPadi grows, more locations
+              access to reliable car care. As Fokomo grows, more locations
               will follow.
             </p>
           </div>
@@ -85,7 +85,7 @@ export default function LocationsPage() {
               </div>
 
               <h2 className="mt-4 text-2xl font-bold tracking-tight sm:text-3xl">
-                Where CarPadi is available
+                Where Fokomo is available
               </h2>
               <p className="mt-1 text-sm text-gray-600">
                 Serving communities across Lagos with premium car care

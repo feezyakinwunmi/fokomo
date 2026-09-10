@@ -4,6 +4,7 @@ import {
   MessageCircle,
   Phone,
 } from "lucide-react";
+import Image from "next/image";
 
 const footerLinks = {
   Company: [
@@ -38,19 +39,15 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link href="/" className="inline-flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-black">
-                <span className="text-sm font-bold">F</span>
-              </div>
-
-              <div className="leading-none">
-                <span className="block text-lg font-semibold">
-                  Fokomo
-                </span>
-
-                <span className="mt-1 block text-[9px] uppercase tracking-[0.25em] text-zinc-500">
-                  Car Care
-                </span>
-              </div>
+              <div className="flex h-10 w-20 items-center justify-center rounded-xl bg-transparent text-black">
+                            <Image
+                               src="/logo.png"
+                               alt="Fokomo Logo"
+                               width={38}
+                               height={38}
+                               className="h-10 w-20"
+                             />
+                           </div>
             </Link>
 
             <p className="mt-7 max-w-sm text-sm leading-7 text-zinc-400">

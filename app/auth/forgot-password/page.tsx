@@ -138,8 +138,8 @@ export default function ForgotPasswordPage() {
                 <p className="text-xs text-gray-500">
                   <span className="font-medium text-gray-700">Need help?</span>{" "}
                   Contact us at{" "}
-                  <a href="mailto:support@carpadi.com" className="text-yellow-600 hover:text-yellow-700">
-                    support@carpadi.com
+                  <a href="mailto:support@Fokomo.com" className="text-yellow-600 hover:text-yellow-700">
+                    support@Fokomo.com
                   </a>{" "}
                   or call{" "}
                   <a href="tel:+2348001234567" className="text-yellow-600 hover:text-yellow-700">
