@@ -84,7 +84,7 @@ export default function Header() {
                 className="hidden h-10 items-center gap-2 rounded-full px-4 text-sm font-medium text-zinc-700 transition hover:bg-zinc-100 sm:flex"
               >
                 <Phone size={15} strokeWidth={1.8} />
-                <span>Contact</span>
+                <span>Contactor</span>
               </a>
 
               {/* Auth Section */}
