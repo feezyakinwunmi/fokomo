@@ -279,15 +279,36 @@ export default function SurveyForm() {
     }
   }
 
-  function submitSurvey() {
-    setLoading(true)
+ async function submitSurvey() {
+  setLoading(true)
 
-    setTimeout(() => {
-      console.log("Fokomo survey:", answers)
-      setLoading(false)
-      setSubmitted(true)
-    }, 800)
+  try {
+    // Convert answers to string-keyed object (Apps Script needs string keys)
+    const payload: Record<string, string | string[]> = {}
+    Object.entries(answers).forEach(([key, value]) => {
+      payload[String(key)] = value
+    })
+
+    console.log("Submitting:", payload)
+
+    await fetch(process.env.NEXT_PUBLIC_SURVEY_SCRIPT_URL!, {
+      method: "POST",
+      mode: "no-cors", // Required for Google Apps Script
+      headers: {
+        "Content-Type": "text/plain",
+      },
+      body: JSON.stringify(payload),
+    })
+
+    console.log("CarPadi survey submitted:", answers)
+    setSubmitted(true)
+  } catch (error) {
+    console.error("Error submitting survey:", error)
+    alert("Something went wrong. Please try again.")
+  } finally {
+    setLoading(false)
   }
+}
 
   if (submitted) {
     return (
