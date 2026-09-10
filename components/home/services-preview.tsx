@@ -69,7 +69,7 @@ const quickLinks = [
     title: "Express Booking",
     description: "Same-day available",
     icon: Clock,
-    href: "/book",
+    href: "/account/book",
   },
   {
     title: "Expert Advice",
