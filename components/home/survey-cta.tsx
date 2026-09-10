@@ -28,8 +28,8 @@ export default function SurveyCta() {
             </div>
 
             <h2 className="mt-4 text-2xl font-bold tracking-tight sm:text-3xl">
-              Help us build the kind of
-              <span className="block text-yellow-500">car care you actually want.</span>
+              Let's talk about
+              <span className="block text-yellow-500">car maintenance</span>
             </h2>
 
             <p className="mt-3 max-w-xl text-sm leading-6 text-gray-600">
@@ -60,7 +60,7 @@ export default function SurveyCta() {
                 <Users size={16} className="text-yellow-600" />
               </div>
               <div>
-                <p className="text-sm font-semibold">500+</p>
+                <p className="text-sm font-semibold">100+</p>
                 <p className="text-xs text-gray-500">Responses so far</p>
               </div>
             </div>
@@ -93,7 +93,7 @@ export default function SurveyCta() {
                 />
               ))}
             </div>
-            <span className="text-xs text-gray-500">Join 500+ others</span>
+            <span className="text-xs text-gray-500">Join 100+ others</span>
           </div>
         </div>
       </div>

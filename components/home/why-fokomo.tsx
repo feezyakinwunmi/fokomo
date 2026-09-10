@@ -12,30 +12,30 @@ const reasons = [
     icon: Clock3,
     title: "Save your time",
     description:
-      "Book ahead or choose mobile service so your car doesn't control your schedule.",
+      "Book ahead or choose mobile service so your car doesn't control your schedule, and a comfortable area to work and relax ",
     color: "blue",
   },
   {
     icon: ShieldCheck,
-    title: "Trust the process",
+    title: "Professional customer services",
     description:
       "Professional staff, clear processes and careful vehicle handling from start to finish.",
     color: "emerald",
   },
   {
     icon: WalletCards,
-    title: "Know what to expect",
+    title: "relatively affordable",
     description:
-      "Straightforward service options and transparent pricing without unnecessary surprises.",
+      "Straightforward service options from one-off payment to subscription models ",
     color: "amber",
   },
-  {
-    icon: Eye,
-    title: "Stay informed",
-    description:
-      "We want customers to understand what's being done to their vehicle and why.",
-    color: "purple",
-  },
+  // {
+  //   icon: Eye,
+  //   title: "Stay informed",
+  //   description:
+  //     "We want customers to understand what's being done to their vehicle and why.",
+  //   color: "purple",
+  // },
 ];
 
 const colorMap = {
@@ -96,7 +96,7 @@ export default function WhyFokomo() {
         {/* Quote & Trust Badges */}
         <div className="mt-12 flex flex-col gap-8 rounded-2xl border border-white/5 bg-white/5 p-8 lg:flex-row lg:items-center lg:justify-between">
           <blockquote className="max-w-3xl">
-            <p className="text-lg font-medium leading-relaxed text-gray-300 lg:text-xl">
+            <p className="text-lg font-medium leading-relaxed text-yellow-400 lg:text-xl">
               "The goal is for every customer to leave with two things: a car
               that has been properly cared for and the feeling that their time
               wasn't wasted."
@@ -113,8 +113,8 @@ export default function WhyFokomo() {
               <span className="text-sm font-medium text-gray-300">4.9/5</span>
             </div>
             <div className="flex items-center gap-2 text-xs text-gray-500">
-              <ThumbsUp size={14} />
-              <span>Trusted by 2,000+ customers</span>
+              {/* <ThumbsUp size={14} /> */}
+              {/* <span>Trusted by 2,000+ customers</span> */}
             </div>
           </div>
         </div>

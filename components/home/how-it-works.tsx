@@ -12,7 +12,7 @@ const steps = [
     number: "01",
     title: "Book your service",
     description:
-      "Choose what your vehicle needs and pick a time that works for you.",
+      "Choose what service you need and pick a time that works for you.",
     icon: CalendarCheck,
     color: "blue",
   },
@@ -64,13 +64,13 @@ export default function HowItWorks() {
             </div>
 
             <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">
-              Car care without
-              <span className="block text-yellow-500">the unnecessary wait.</span>
+              Car care services with
+              <span className="block text-yellow-500">exceptional customer experience</span>
             </h2>
 
             <p className="mt-3 text-sm text-gray-600">
               Fokomo is designed to make getting your car cared for feel
-              simple, predictable and convenient.
+              simple, time bound and convenient.
             </p>
 
             <Link

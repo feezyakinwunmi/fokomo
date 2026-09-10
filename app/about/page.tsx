@@ -11,6 +11,7 @@ import {
   Mail,
   Phone,
 } from "lucide-react"
+import Image from "next/image"
 
 export const metadata = {
   title: "About Fokomo",
@@ -52,8 +53,9 @@ const principles = [
 const teamMembers = [
   {
     name: "Adeyemi Haleemah precious",
+    img: "/images/she.jpg",
     role: "Founder & CEO",
-    bio: "Passionate about building customer-centric businesses that solve real problems in communities.",
+    bio: "Passionate about building a customer centric brand that offers solutions to everyday human problems. While maintaining standard quality service and delivering the best results",
     email: "Info.Adeyemihaleemah@gmail.com",
     phone: "+234 805 865 2991",
   },
@@ -107,8 +109,7 @@ export default function AboutPage() {
             </h1>
 
             <p className="mt-3 max-w-2xl text-sm leading-6 text-gray-400">
-              Fokomo is building a better way for people to care for their
-              cars — starting with the communities around us.
+              Fokomo is building a better car care service option for you, we are an all inclusive car cleaning designed to provide a functional range of car care, maintenance and convenience under one business
             </p>
           </div>
         </div>
@@ -127,35 +128,48 @@ export default function AboutPage() {
               </div>
 
               <h2 className="mt-4 text-2xl font-bold tracking-tight sm:text-3xl">
-                We noticed something simple.
+                We noticed a Gap.
               </h2>
             </div>
 
             <div className="space-y-4 text-sm leading-6 text-gray-600">
               <p>
-                Many communities have plenty of cars but limited access to
-                reliable car-care services. And when people do find a place
-                to wash or care for their car, the experience can involve
-                long waits, uncertainty and inconvenience.
+                We notice that although they are a large number of cars moving through the communities everyday, we have limited access to car care option, more importantly the customer experience while waiting was largely overlooked
               </p>
 
-              <p>
-                Your car may need attention, but that does not mean your
-                entire day should stop because of it.
-              </p>
 
-              <p>
-                Fokomo was created around that idea: take proper care of the
-                car while respecting the person who owns it.
-              </p>
 
-              <div className="rounded-xl bg-yellow-50 p-4 border border-yellow-200">
-                <p className="text-sm font-medium text-yellow-900">
-                  "The goal is for every customer to leave with two things: a
-                  car that has been properly cared for and the feeling that
-                  their time was not wasted."
-                </p>
+             
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      {/* Our solution */}
+      <section className="bg-white">
+        <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-20">
+          <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
+            <div>
+              <div className="inline-flex items-center gap-2 rounded-full bg-yellow-100 px-3 py-1.5">
+                <span className="h-1.5 w-1.5 rounded-full bg-yellow-500" />
+                <span className="text-xs font-medium text-yellow-700">
+                  Our Solution
+                </span>
               </div>
+
+              <h2 className="mt-4 text-2xl font-bold tracking-tight sm:text-3xl">
+                Fekomo is our solution
+              </h2>
+            </div>
+
+            <div className="space-y-4 text-sm leading-6 text-gray-600">
+              <p>
+Fokomo provides extensive quality car care services while creating a comfortable experience  (physical and  mobile) where you can relax , work or simply take a deep breathe while we take care of your carFokomo provides extensive quality car care services while creating a comfortable experience  (physical and  mobile) where you can relax , work or simply take a deep breathe while we take care of your car. The goal is for every  customer to leave with two things : a car that’s been well cared for and the feeling that their time wasn’t wasted .              </p>
+
+              
+
             </div>
           </div>
         </div>
@@ -232,10 +246,15 @@ export default function AboutPage() {
                 key={member.name}
                 className="rounded-xl border border-gray-200 bg-gray-50/50 p-6 transition hover:shadow-md"
               >
+
                 <div className="flex items-center gap-4">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-yellow-400 to-yellow-500 text-xl font-bold text-black">
-                    {member.name.split(' ').map(n => n[0]).join('')}
-                  </div>
+                 <Image
+                    src={member.img}
+                    alt={member.name}
+                    width={60}  
+                    height={60}
+                    className="h-30 w-30 rounded-full object-cover"
+                  />  
                   <div>
                     <h3 className="font-semibold">{member.name}</h3>
                     <p className="text-sm text-yellow-600">{member.role}</p>

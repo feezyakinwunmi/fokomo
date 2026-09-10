@@ -16,7 +16,7 @@ const services = [
     number: "01",
     title: "Express Wash",
     description:
-      "Quick, thorough cleaning that gets your car looking fresh in under 15 minutes.",
+      "Quick and thorough clean under 15 minutes ",
     icon: Droplets,
     href: "/services/wash",
     color: "blue",
@@ -27,7 +27,7 @@ const services = [
     number: "02",
     title: "Premium Detailing",
     description:
-      "Deep cleaning and restoration that brings your vehicle back to showroom condition.",
+      "Exterior and interior deep cleaning that ensures comfort in every drive",
     icon: Sparkles,
     href: "/services/detailing",
     color: "purple",
@@ -38,7 +38,7 @@ const services = [
     number: "03",
     title: "Interior Care",
     description:
-      "Meticulous cleaning of every surface inside your vehicle for a fresh, comfortable ride.",
+      "Interior products that ensure you a comfortable ride everytime.",
     icon: CarFront,
     href: "/services/interior-care",
     color: "emerald",
@@ -94,13 +94,12 @@ export default function ServicesPreview() {
             </div>
 
             <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">
-              Premium car care,
-              <span className="block text-yellow-500">tailored to you</span>
+              Beyond the wash,
+              <span className="block text-yellow-500">is various car maintenance services </span>
             </h2>
 
             <p className="mt-3 max-w-xl text-sm text-gray-600">
-              From quick washes to full detailing, we provide expert care for
-              every vehicle.
+              Your one shop stop for Functional car care, and exceptional customer experience
             </p>
           </div>
 

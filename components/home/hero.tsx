@@ -26,13 +26,12 @@ export default function Hero() {
           </div>
 
           <h1 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
-            Give Your Car the
-            <span className="block text-yellow-400">Royal Treatment</span>
+            Car care 
+            <span className="block text-yellow-400">with convenience</span>
           </h1>
 
           <p className="mt-4 text-base text-gray-300 sm:text-lg">
-            Professional car wash and detailing services that leave your vehicle 
-            looking showroom ready.
+            From professional washing to detailing and basic vehicle care, fokomo  brings accessible services and convenience that’s fits your needs
           </p>
 
           <div className="mt-6 flex flex-col gap-3 sm:flex-row">
@@ -56,7 +55,7 @@ export default function Hero() {
             {[
               { icon: Droplets, label: "Express Wash", time: "15 min" },
               { icon: Sparkles, label: "Full Detail", time: "2-3 hrs" },
-              { icon: Shield, label: "Ceramic Coat", time: "4-6 hrs" },
+              { icon: Shield, label: "Mobile services", time: "4-6 hrs" },
             ].map((item) => (
               <div key={item.label} className="rounded-lg bg-white/10 p-3 text-center backdrop-blur-sm">
                 <item.icon className="mx-auto h-5 w-5 text-yellow-400" />
@@ -114,7 +113,7 @@ export default function Hero() {
                 <Check className="h-4 w-4 text-yellow-400" />
               </div>
               <div>
-                <p className="text-xs font-semibold text-white">Eco-Friendly</p>
+                <p className="text-xs font-semibold text-white">Customer Experience</p>
                 <p className="text-[10px] text-gray-400">Biodegradable soap</p>
               </div>
             </div>
@@ -132,5 +131,6 @@ export default function Hero() {
         </div>
       </div>
     </section>
+    
   );
 }

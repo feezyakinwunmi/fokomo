@@ -28,9 +28,9 @@ export default function SurveyPage() {
             </h1>
 
             <p className="mt-3 max-w-2xl text-sm leading-6 text-gray-400 sm:text-base">
-              We want to understand how people actually experience car
-              care today. This short survey will help us build Fokomo
-              around real customer needs.
+             We’re building CarPadi around real car-owner experiences.
+
+We’d appreciate your sincere answers and feedback and please tell us what you’d like us to do differently to serve you better
             </p>
 
             <div className="mt-6 flex flex-wrap gap-2">
@@ -38,7 +38,7 @@ export default function SurveyPage() {
                 16 questions
               </span>
               <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-gray-300">
-                About 5 minutes
+                About 2 minutes
               </span>
               <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-gray-300">
                 Your feedback matters
